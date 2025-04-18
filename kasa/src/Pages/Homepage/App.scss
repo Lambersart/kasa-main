@@ -1,0 +1,71 @@
+body h1 {
+      font-family: "Montserrat", sans-serif;
+}
+a {
+      text-decoration: none;
+}
+
+/* Style du titre */
+.title-container h1 {
+      font-size: 48px; /* Ajustée selon Figma */
+      font-family: "Montserrat", sans-serif;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+}
+.banner {
+      background-image: url("/Mask-GroupChezVous.png");
+      background-size: cover;
+      background-position: center;
+      height: 225px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.chezVous {
+      color: white;
+      font-size: 36px;
+      padding: 20px 40px;
+      border-radius: 10px;
+}
+
+.card-container {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      background-color: #f6f6f6;
+      margin-top: 40px;
+      border-radius: 20px;
+      padding: 40px;
+      gap: 40px;
+}
+
+/* 🔹 Responsive Design (Mobile) */
+@media (max-width: 768px) {
+      .title-container {
+            height: 300px; /* Réduit la hauteur sur petits écrans */
+      }
+      .title-container h1 {
+            font-size: 32px; /* Réduit la taille du texte */
+            padding: 10px;
+      }
+      .chezVous {
+            font-size: 24px;
+            padding: 15px 20px;
+      }
+
+      .banner {
+            height: 180px;
+            padding: 0 1rem;
+      }
+
+      .card-container {
+            grid-template-columns: 1fr;
+            gap: 16px;
+      }
+      .card-grid {
+            flex-direction: column;
+      }
+} /*# sourceMappingURL=App.css.map */

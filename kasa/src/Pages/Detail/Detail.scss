@@ -1,0 +1,199 @@
+.detail-container {
+      h1 {
+            color: #ff6060;
+      }
+}
+
+.detail-info {
+      display: flex;
+      margin-top: 25px;
+}
+
+.info-right {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      align-content: flex-end;
+}
+.detail-gallery {
+      text-align: center;
+}
+
+.image-container {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+
+      .detail-picture {
+            width: 100%;
+            max-height: 400px;
+            min-height: 415px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+      }
+
+      .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            z-index: 2;
+            outline: none;
+
+            &:focus {
+                  outline: none;
+                  box-shadow: none;
+            }
+
+            &.left {
+                  left: 15px;
+            }
+
+            &.right {
+                  right: 15px;
+            }
+
+            svg {
+                  width: 47px;
+                  height: 80px;
+                  color: #ffffff;
+                  transition: color 0.2s ease, transform 0.2s ease,
+                        opacity 0.2s ease;
+                  opacity: 1;
+            }
+
+            &:hover {
+                  svg {
+                        color: #d3d3d3;
+                        transform: scale(1.05);
+                        opacity: 1;
+                  }
+            }
+
+            &:active {
+                  svg {
+                        transform: scale(0.95);
+                        color: #b0b0b0;
+                        opacity: 0.9;
+                  }
+            }
+      }
+
+      .counter {
+            position: absolute;
+            bottom: 10px;
+            right: 15px;
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            z-index: 1;
+      }
+}
+
+.titreDetail {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 0;
+}
+
+.location {
+      display: flex;
+      justify-content: flex-start;
+}
+
+.Tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: flex-start;
+      background: none;
+      margin-top: 20px;
+
+      .tag {
+            background-color: #ff6060;
+            color: white;
+            padding: 0.1rem 2rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            white-space: nowrap;
+            display: inline-block;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                  background-color: #e24c4c;
+            }
+      }
+}
+
+.star {
+      color: #ccc;
+      font-size: 36px;
+      margin-top: 5%;
+
+      &.colored {
+            color: #ff6060;
+      }
+}
+
+.rating {
+      display: flex;
+      justify-content: flex-end;
+}
+
+.proprio {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 170px;
+      margin-left: auto;
+      color: #ff6060;
+      font-size: 1.25rem;
+
+      & img {
+            border-radius: 50%;
+      }
+}
+
+.accordions-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      margin-top: 60px;
+
+      .accordion-header {
+            background-color: #e76363;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            border-radius: 5px;
+      }
+
+      .accordion-content {
+            background-color: #f8f8f8;
+            padding: 15px;
+            border-radius: 5px;
+            border-top: 1px solid #ddd;
+      }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+      .Tags {
+            max-width: 100%;
+            justify-content: center;
+
+            .tag {
+                  font-size: 0.8rem;
+                  padding: 0.3rem 0.8rem;
+            }
+      }
+}

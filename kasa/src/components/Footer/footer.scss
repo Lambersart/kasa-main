@@ -1,0 +1,24 @@
+.footer {
+      background-color: black;
+      padding: 60px 0;
+
+      .logoFooter {
+      }
+
+      .footer_rights {
+            color: white;
+      }
+}
+@media (max-width: 768px) {
+      .footer {
+            padding: 30px 10px;
+
+            .logoFooter {
+                  height: 30px;
+            }
+
+            .mentionsFooter {
+                  max-width: 100%;
+            }
+      }
+}
