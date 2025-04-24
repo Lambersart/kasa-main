@@ -2,7 +2,7 @@
 import React from "react";
 import footerImg from "/footerLogo.png";
 import "./footer.scss";
-import mentionsFooter from "/© 2020 Kasa. All rights reserved.png";
+
 function Footer() {
       return (
             <>

@@ -4,7 +4,6 @@ import Footer from "../../components/Footer/Footer";
 import "./App.scss";
 import logements from "../../../logements.json";
 import Card from "../../components/Card/Card";
-import BackgroundImage from "/Mask-GroupChezVous.png";
 
 function App() {
       const logementCards = logements.map((logement) => (
